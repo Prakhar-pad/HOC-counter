@@ -5,8 +5,7 @@ const ClickCounter = (props) => {
   console.log(props);
   return (
     <button onClick={props.incrementCounter}>
-      count= {props.count}
-      {props.text}
+      {props.text + ' ' + props.count}
     </button>
   );
 };

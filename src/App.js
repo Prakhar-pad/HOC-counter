@@ -3,14 +3,13 @@ import './style.css';
 import ClickCounter from './clickCounter';
 import MouseOverCounter from './mouseOver';
 export default function App() {
-  const t = 'Hello';
+  const clickCounter = 'Click';
+  const mouseOver = 'MouseOver';
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-
-      <ClickCounter text={t} />
-      <MouseOverCounter />
+      <ClickCounter text={clickCounter} />
+      <hr />
+      <MouseOverCounter text={mouseOver} />
     </div>
   );
 }
